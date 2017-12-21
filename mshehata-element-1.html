@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="mshehata-element-1">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `mshehata-element-1`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class MshehataElement1 extends Polymer.Element {
+      static get is() { return 'mshehata-element-1'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'mshehata-element-1'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MshehataElement1.is, MshehataElement1);
+  </script>
+</dom-module>
